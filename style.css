@@ -13,10 +13,10 @@ html, body {
 }
 
 body {
-    background-color: #18dfcb;
+    background-color: #75e6da;
     width: auto;
-    font-family: 'Ruluko', sans-serif;
-    font-weight: 500;
+    font-family: 'Sriracha', cursive;
+    letter-spacing: .8px;
 }
 
 .navbar {
@@ -29,13 +29,13 @@ nav img {
 }
 
 h2, h3, h4 {
-    color: #014d79;
-    margin: 20px 5px 0 15px;
+    color: #011a27;
+    margin: 20px 5px 20px 15px;
     padding: 0;
 }
 
 p {
-    margin: 0 5px 0 15px;
+    margin: 0 5px 20px 15px;
     padding-left: 3px;
 }
 
@@ -54,10 +54,10 @@ p {
 .title-header h1 {
     position: absolute;
     top: 0;
-    left: 5px;
-    color: #aaf0e5;
-    padding: 105px 0 0 25%;
-    text-shadow: -3px -2px 2px #011a28;
+    left: 0;
+    color: #d4f1f4;
+    padding: 100px 0 0 15%;
+    text-shadow: -3px -2px 2px #a70202;
     animation: titre ease 5s;
 }
 
@@ -76,34 +76,59 @@ p {
 
 .button {
     float: right;
-    background-color: #02adad;
+    background-color: #05445e;
     border-style: solid;
     border-width: 1.5px;
     border-radius: 5px;
-    color: #011a28;
-    border-color: #7fffd4;
+    color: #d4f1f4;
+    border-color: #d4f1f4;
     text-decoration: none;
-    margin: 0 5px 5px 0;
+    margin: 0 10px 10px 0;
     padding: 5px 10px 5px 10px;
 }
   
 .button:hover {
-    background-color: #028585;
-    color: #7fffd4;
-    border-color: #011a28;
+    background-color: #75e6da;
+    color: #011a27;
+    border-color: #011a27;
     text-decoration: none;
+    transition-duration: .5s;
+}
+
+.img-contenant > .button,
+.btn-info,
+.conf > .button {
+    background-color: #05445e;
+    color: #d4f1f4;
+    border-color: #d4f1f4;
+    padding: 5px 10px 5px 10px;
+}
+
+.img-contenant > .button:hover,
+.btn-info:hover,
+.conf > .button:hover {
+    background-color: #189ab4;
+    color: #011a27;
+    border-color: #011a27;
+}
+
+.btn-info,
+.conf > .button {
+    float: right;
+    margin: 20px auto;
+    transition-duration: .5s;
 }
 
 .img-habitat {
     width: 100%;
     margin-bottom: 10px;
-    box-shadow: 0px 0px 10px 0px #1d2e38;
+    box-shadow: 0px 0px 10px 0px #011a27;
 }
   
 .img-contenant {
     position: relative;
     text-align: end;
-    color: #7fffd4;
+    color: #d4f1f4;
 }
   
 .legend-img {
@@ -119,38 +144,28 @@ p {
 .article4, 
 .article5, 
 .article6 {
-    margin: 0 20px 0 20px;
+    background-color: #189ab4;
+    margin: 0 15px 0 15px;
     border-radius: 10px;
     /* https://html-css-js.com (générateur de box-shadow) */
-    -webkit-box-shadow: 0px 0px 10px 2px #1d2e38f2; 
-    box-shadow: 0px 0px 10px 2px #1d2e38f2;
+    -webkit-box-shadow: 0px 0px 10px 2px #011a27f2; 
+    box-shadow: 0px 0px 10px 2px #011a27f2;
 }
 
 .form, .conf {
-    background-color: #5dfff3;
+    background-color: #d4f1f4;
     border-radius: 10px;
-    margin: auto;
     padding: 10px;
-    border: 2px solid #011a28;
-}
-
-.form-control {
-    background-color: #e4faf6;
-}
-
-.conf > .button {
-    margin-top: 20px;
-}
-
-.btn-info{
-    color: #7fffd4;
-    background-color: #011a28;
-    float: right;
-    margin-top: 20px;
+    border: 2px solid #011a27;
 }
 
 .row {
     justify-content: space-around;
+}
+
+.conf > p > strong {
+    color: #a70202;
+    font-style: italic;
 }
 
 /* ΞΞΞΞΞΞ  mobile-first responsive elements  ΞΞΞΞΞΞ */
