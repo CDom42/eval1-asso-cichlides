@@ -1,6 +1,6 @@
 /* ΞΞΞΞΞΞΞΞΞΞΞΞΞ  general styles  ΞΞΞΞΞΞΞΞΞΞΞΞΞ */
 :root {
-    font-size: 12px;
+    font-size: 14px;
 }
 
 * {
@@ -101,7 +101,7 @@ p {
     background-color: #05445e;
     color: #d4f1f4;
     border-color: #d4f1f4;
-    padding: 5px 10px 5px 10px;
+    padding: 5px;
 }
 
 .img-contenant > .button:hover,
@@ -115,7 +115,7 @@ p {
 .btn-info,
 .conf > .button {
     float: right;
-    margin: 20px auto;
+    margin: 20px 0 0 0;
     transition-duration: .5s;
 }
 
@@ -186,6 +186,7 @@ p {
         "article6"
         "article7";
     grid-row-gap: 2em;
+    grid-column-gap: .5em;
 }
 
 .article1 {
@@ -218,7 +219,6 @@ p {
 
 .module-texte {
     flex-shrink: initial;
-    padding: 10px;
     align-content: center;
     justify-content: center;
 }
@@ -235,7 +235,7 @@ p {
     border-radius: 5%;
     justify-content: center;
     align-content: center;
-    width: 260px;
+    width: 12em;
     display: block;
     margin: 0 auto;
     -webkit-box-shadow: 0px 0px 20px 0px #1d2e3866; 
@@ -244,9 +244,9 @@ p {
   
 .footer {
     background-color: #011a27;
-    height: 5em;
+    height: 6em;
     border-top: 3px solid #d4f1f4;
-    margin-top: 80px;
+    margin-top: 40px;
     box-shadow: 0px 0px 10px 0px #011a27;
     display: flex;
     align-items: center;
@@ -273,19 +273,38 @@ p {
     font-size: 1.5em;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 410px) {
     .title-header h1 {
-        padding-top: 60px;
+        padding-top: 1.7em;
+        font-size: 1.8em;
     }
 
     .module-image img {
         width: 85%;
     }
+
+    .theme {
+        font-size: 60%;
+    }
+}
+
+@media screen and (min-width: 411px) and (max-width: 575px) {
+    .title-header h1 {
+      font-size: 2.5em;
+    }
+  
+    .module-image img {
+      width: 80%;
+    }
+  
+    .theme {
+      font-size: 80%;
+    }
 }
 
 @media screen and (min-width: 576px) {
     :root {
-        font-size: 14px;
+        font-size: 1.1em;
     }
 
     .grid-container {
@@ -302,7 +321,7 @@ p {
 
 @media screen and (min-width: 768px) {
     :root {
-        font-size: 16px;
+        font-size: 1.2em
     }
 
     .grid-container {
@@ -320,7 +339,7 @@ p {
 
 @media screen and (min-width: 992px) {
     :root {
-        font-size: 18px;
+        font-size: 1.3em;
     }
 
     .grid-container {
@@ -336,7 +355,7 @@ p {
 
 @media screen and (min-width: 1200px) {
     :root {
-        font-size: 20px;
+        font-size: 1.4em;
     }
 
     .grid-container {
@@ -374,7 +393,7 @@ p {
 
 @media screen and (min-width: 1400px) {
     :root {
-        font-size: 22px;
+        font-size: 1.5em;
     }
   
     body {
@@ -403,22 +422,22 @@ p {
     box-shadow: 0px 0px 10px 0px #011a27;
 }
 
-.theme
-.theme-title {
+.theme-title h3 {
     color: #d4f1f4;
-    font-size: 2em;
+    font-size: 1.5em;
     text-shadow: -2px -2px 2px #a70202;
     text-align: center;
     position: absolute;
-    top: 30%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 60%;
     z-index: 2;
-    animation: theme-title ease 6s;
+    animation: theme-title ease 4s;
+    margin: 20px auto;
 }
 
-.theme-title:hover {
+.theme-title h3:hover {
     background-color: rgb(1, 26, 39, .8);
     color: #a70202;
     border-radius: 20px;
@@ -443,32 +462,45 @@ p {
     color: #d4f1f4;
     text-align: center;
     position: absolute;
-    top: 65%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 70%;
     z-index: 2;
+    transition-duration: 2s;
+    animation: ease-in-out;
+    margin: 10px auto;
 }
 
-h4:hover, .date:hover, .tarif:hover {
+.theme h4:hover, .date:hover, .tarif:hover {
     background-color: rgb(1, 26, 39, .8);
     border-radius: 20px;
     transition-duration: 2s;
     animation: ease-in-out;
 }
 
-.date, .tarif {
+.date {
     font-size: 1em;
     color: #d4f1f4;
     text-align: center;
     position: absolute;
-    top: 85%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 50%;
     z-index: 2;
+    transition-duration: 2s;
+    animation: ease-in-out;
+    margin: auto;
 }
 
-.tarif {
-    left: 70%;
+.theme-title h3, 
+.theme-title h3:hover,
+.theme h4, 
+.theme h4:hover, 
+.date,
+.date:hover {
+    width: fit-content;
+    padding: 0 10px 0 10px;
 }
+
