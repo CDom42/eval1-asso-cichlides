@@ -146,7 +146,7 @@ p {
     position: fixed;
     width: 2em;
     height: 2em;
-    bottom: 6em;
+    bottom: 6.2em;
     right: .5em;
     color: rgb(1, 26, 39, .5);
     background-color: rgb(212, 241, 244, .2);
@@ -265,7 +265,7 @@ p {
     align-content: center;
 }
   
-.module-image img {
+.module-image picture img {
     border-radius: 5%;
     justify-content: center;
     align-content: center;
@@ -312,7 +312,7 @@ p {
         font-size: 1.8em;
     }
 
-    .module-image img {
+    .module-image picture img {
         width: 85%;
     }
 
@@ -326,8 +326,8 @@ p {
       font-size: 2.5em;
     }
   
-    .module-image img {
-      width: 80%;
+    .module-image picture img {
+      width: 65%;
     }
   
     .theme {
