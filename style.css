@@ -88,7 +88,7 @@ p {
     top: 0;
     left: 0;
     color: #d4f1f4;
-    padding: 90px 0 0 15%;
+    padding: 80px 0 0 15%;
     text-shadow: -3px -2px 2px #a70202;
     animation: title ease 5s;
 }
@@ -149,13 +149,19 @@ p {
     float: right;
     margin: 20px 0 0 0;
     transition-duration: .5s;
+    border-width: 1.5px;
+    border-radius: 5px;
+}
+
+.conf .button {
+    margin-bottom: 35px;
 }
 
 .bi-arrow-up-square {
     position: fixed;
     width: 2em;
     height: 2em;
-    bottom: 5.5em;
+    bottom: 6.5em;
     right: .5em;
     color: #011a2780;
     background-color: #d4f1f433;
@@ -290,7 +296,7 @@ p {
     height: 5em;
     border-top: 3px solid #d4f1f4;
     margin-top: 40px;
-    box-shadow: 0px 0px 10px 0px #011a27;
+    box-shadow: 0 0 10px 0 #011a2766;
     display: flex;
     align-items: center;
 }
@@ -474,7 +480,7 @@ p {
     text-shadow: -2px -2px 2px #a70202;
     text-align: center;
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 60%;
@@ -484,7 +490,7 @@ p {
 }
 
 .theme-title h3:hover {
-    background-color: rgb(1, 26, 39, .8);
+    background-color: #011a27cc;
     color: #a70202;
     border-radius: 20px;
     transition-duration: 2s;
@@ -493,7 +499,7 @@ p {
 
 @keyframes theme-title {
     0% {
-        background-color: rgb(1, 26, 39, .8);
+        background-color: #011a27cc;
         color: #a70202;
         border-radius: 20px;
     }
@@ -519,7 +525,7 @@ p {
 }
 
 .theme h4:hover, .date:hover {
-    background-color: rgb(1, 26, 39, .8);
+    background-color: #011a27cc;
     border-radius: 20px;
     transition-duration: 2s;
     animation: ease-in-out;
