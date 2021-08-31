@@ -177,7 +177,6 @@ p {
 .img-contenant {
     position: relative;
     text-align: end;
-    color: #d4f1f4;
 }
   
 .legend-img {
@@ -185,6 +184,10 @@ p {
     bottom: 10px;
     left: 0;
     margin-left: 8px;
+    padding: 0 5px 0 5px;
+    color: #d4f1f4;
+    background-color: #011a2780;
+    border-radius: 8px;
 }
 
 .article1, 
